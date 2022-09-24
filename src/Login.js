@@ -63,9 +63,6 @@ const Login = () => {
         <section style={{ borderRadius: "15px" }}>
           <h1>وارد شدید</h1>
           <br />
-          <p>
-            <a href="#">خانه</a>
-          </p>
         </section>
       ) : (
         <section style={{ borderRadius: "15px" }}>
