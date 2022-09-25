@@ -1,10 +1,11 @@
 import { useRef, useState, useEffect, useContext } from "react";
-import AuthContext from "./context/AuthProvider";
+import AuthContext from "../../../context/AuthProvider";
+import { Dashboard } from "../../../Pages/Dashboard";
 
-import axios from "./api/axios";
+import axios from "../../../api/axios";
 const LOGIN_URL = "/api/login";
 
-const Login = () => {
+const LoginForm = () => {
   const { setAuth } = useContext(AuthContext);
   const userRef = useRef();
   const errRef = useRef();
@@ -60,10 +61,7 @@ const Login = () => {
   return (
     <>
       {success ? (
-        <section style={{ borderRadius: "15px" }}>
-          <h1>وارد شدید</h1>
-          <br />
-        </section>
+        <Dashboard/>
       ) : (
         <section style={{ borderRadius: "15px" }}>
           <p
@@ -102,4 +100,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginForm;

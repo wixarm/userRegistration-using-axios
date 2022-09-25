@@ -1,4 +1,4 @@
-import Login from './Login';
+import LoginForm from "./features/authentication/components/login";
 
 function App() {
 
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <main className="App">
-      <Login />
+      <LoginForm />
     </main>
   );
 }
