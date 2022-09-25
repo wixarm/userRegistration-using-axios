@@ -5,9 +5,9 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import AppBarComponent from "../features/authentication/app-bar/AppBar";
-import { ActiveRequests } from "../features/authentication/components/active-requests/ActiveRequests";
-import { NewRequests } from "../features/authentication/components/new-requests/NewRequests";
+import AppBarComponent from "../features/app-bar/AppBar";
+import { ActiveRequests } from "../features/active-requests/ActiveRequests";
+import { NewRequests } from "../features/new-requests/NewRequests";
 
 
 export const Dashboard = () => {
