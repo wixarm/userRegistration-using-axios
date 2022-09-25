@@ -5,7 +5,6 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import AppBarComponent from "../features/app-bar/AppBar";
 import { ActiveRequests } from "../features/active-requests/ActiveRequests";
 import { NewRequests } from "../features/new-requests/NewRequests";
 
@@ -13,7 +12,7 @@ import { NewRequests } from "../features/new-requests/NewRequests";
 export const Dashboard = () => {
   return ( 
     <>
-    <AppBarComponent/>
+
     <Grid container justifyContent="center" alignItems="center">
       <Grid xs={10} mt={10}>
         <Card>

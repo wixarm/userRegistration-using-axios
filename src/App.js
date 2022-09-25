@@ -1,13 +1,14 @@
-import LoginForm from "./features/authentication/components/login";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppBarComponent from "./features/app-bar/AppBar";
+
+import routes from "./routes/routes";
 
 function App() {
-
-
-
   return (
-    <main className="App">
-      <LoginForm />
-    </main>
+    <>
+      <AppBarComponent />
+      <Router>{routes}</Router>
+    </>
   );
 }
 

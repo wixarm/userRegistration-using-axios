@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "../../../context/AuthProvider";
-import { Dashboard } from "../../../Pages/Dashboard";
+import {  Navigate} from 'react-router-dom';
 
 import axios from "../../../api/axios";
 const LOGIN_URL = "/api/login";
@@ -61,9 +61,10 @@ const LoginForm = () => {
   return (
     <>
       {success ? (
-        <Dashboard/>
+        <Navigate replace to="/dashboard" />
       ) : (
-        <section style={{ borderRadius: "15px" }}>
+<center>
+<section style={{ borderRadius: "15px", marginTop:"20px" }}>
           <p
             ref={errRef}
             className={errMsg ? "errmsg" : "offscreen"}
@@ -95,6 +96,7 @@ const LoginForm = () => {
             <button>ورود</button>
           </form>
         </section>
+</center>
       )}
     </>
   );
