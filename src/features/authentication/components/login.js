@@ -94,7 +94,7 @@ const LoginForm = () => {
               value={password}
               required
             />
-            <button>ورود</button>
+            <button>ورود به سایت</button>
           </form>
         </section>
 </center>
